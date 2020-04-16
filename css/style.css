@@ -26,7 +26,7 @@ main{
     background-color:white; 
     position:relative;
     box-shadow:0px 0px 10px 3px rgba(0,0,0,0.1);
-    
+    overflow:hidden;   
 }
 
 #center{
@@ -46,7 +46,7 @@ main{
     height:100%;
     width:5px;
     position:absolute;
-    background-color:red;
+    overflow:hidden;
     transform: translateX(-50%);
     
     left:50%;
@@ -56,9 +56,10 @@ main{
 .hours-con::before ,.hours-con::after{
     content:"";
     position:absolute;
-    width:5px;
+    width:10px;
     height:35px;
     background:black;
+    
 }
 
 .hours-con::before{
@@ -76,3 +77,27 @@ main{
     
 }
 
+.hours-con:nth-child(4){
+    transform: rotate(30deg) translateX(-50%);
+    width:5px;
+    
+    
+}
+
+.hours-con:nth-child(5){
+    transform:rotate(60deg) translateX(-25.5%);
+    
+    
+}
+
+.hours-con:nth-child(6){
+    transform: rotate(120deg) translateX(25%);
+    
+    
+}
+
+.hours-con:nth-child(7){
+    transform: rotate(150deg) translateX(50%);
+    
+    
+}
