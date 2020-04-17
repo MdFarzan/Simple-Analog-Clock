@@ -84,14 +84,23 @@ main{
     
 }
 
+.hours-con:nth-child(4):before,.hours-con:nth-child(4):after, .hours-con:nth-child(5):before,.hours-con:nth-child(5):after,
+.hours-con:nth-child(6):before,.hours-con:nth-child(6):after, .hours-con:nth-child(7):before,.hours-con:nth-child(7):after{
+    background:#d3d3d3;
+}
+
+.hours-con:nth-child(5):before,.hours-con:nth-child(5):after{
+    background:#d3d3d3;
+}
+
 .hours-con:nth-child(5){
-    transform:rotate(60deg) translateX(-25.5%);
+    transform:rotate(60deg) translate(-25.5%,0.5%);
     
     
 }
 
 .hours-con:nth-child(6){
-    transform: rotate(120deg) translateX(25%);
+    transform: rotate(120deg) translate(25%,0.5%);
     
     
 }
