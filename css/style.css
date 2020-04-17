@@ -29,7 +29,7 @@ main{
     overflow:hidden;   
 }
 
-#center{
+#center,.center{
     position:absolute;
     top:50%;
     left:50%;
@@ -39,7 +39,7 @@ main{
     width:10px;
     height:10px;
     border-radius:50%;
-    
+    position:relative;
 }
 
 .hours-con{
@@ -106,7 +106,47 @@ main{
 }
 
 .hours-con:nth-child(7){
-    transform: rotate(150deg) translateX(50%);
+    transform: rotate(150deg)  translate(50%,2%);
     
     
+}
+
+.arrow{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform-origin:top;
+    transform:translate(-50%,-10%);
+       
+}
+
+.hours{
+    background-color:red;
+    height:1500%;
+    width:10px;
+    transform:rotate(90deg);
+}
+
+.minutes{
+    background-color:dodgerblue;
+    height:2000%;
+    width:8px;
+    transform:rotate(45deg);
+}
+
+.seconds{
+    background-color:mediumSeaGreen;
+    height:2000%;
+    width:5px;
+    transform:rotate(120deg);
+}
+
+.center{
+    width:25px;
+    height:25px;
+}
+.center-2{
+    width:10px;
+    height:10px;
+    background-color:white;
 }
