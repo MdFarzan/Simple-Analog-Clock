@@ -7,13 +7,13 @@ function setClock(){
     let d = new Date();
     let s = d.getSeconds();
     //setting seconds
-    s = (360/60)*s;
+    s = ((360/60)*s)+180;
     
     second.style.transform = "rotate("+s+"deg)";
 
     //setting minutes
     let m = d.getMinutes();
-    m = (360/60)*m;
+    m = ((360/60)*m);
     console.log(m);
 
     minute.style.transform = "rotate("+m+"deg)";
