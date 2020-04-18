@@ -39,7 +39,7 @@ main{
     width:20px;
     height:20px;
     border-radius:50%;
-    
+    z-index:5 !important;
 }
 
 .hours-con{
@@ -92,7 +92,7 @@ main{
 .deg-150{
     transform:translateX(-50%) rotate(150deg);
 }
-/*
+
 .arrow{
     position:absolute;
     top:50%;
@@ -104,23 +104,25 @@ main{
 
 .hours{
     background-color:red;
-    height:1500%;
+    height:750%;
     width:10px;
     transform:rotate(90deg);
 }
 
+
+
 .minutes{
     background-color:dodgerblue;
-    height:2000%;
-    width:8px;
+    height:900%;
+    width:7px;
     transform:rotate(45deg);
 }
 
 .seconds{
     background-color:mediumSeaGreen;
-    height:2000%;
+    height:1000%;
     width:5px;
     transform:rotate(120deg);
 }
 
-*/
+
