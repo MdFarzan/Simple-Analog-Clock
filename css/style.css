@@ -29,17 +29,17 @@ main{
     overflow:hidden;   
 }
 
-#center,.center{
+#center{
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
     background-color:#d3d3d3;
     display:inline-block;
-    width:10px;
-    height:10px;
+    width:20px;
+    height:20px;
     border-radius:50%;
-    position:relative;
+    
 }
 
 .hours-con{
@@ -47,70 +47,33 @@ main{
     width:5px;
     position:absolute;
     overflow:hidden;
-    transform: translateX(-50%);
-    
     left:50%;
+    background:red;
     
 }
 
-.hours-con::before ,.hours-con::after{
-    content:"";
+.deg-90{
+    transform:translateX(-50%) rotate(0deg);
+}
+
+.deg-0{
+    transform:translateX(-50%) rotate(90deg);
     position:absolute;
-    width:10px;
-    height:35px;
-    background:black;
-    
 }
-
-.hours-con::before{
-    top:0px;
-}
-.hours-con::after{
-    bottom:0px;
+.hour{
+    display:inline-block;
+    background-color:mediumSeaGreen;    
+    width:20px;
+    height:20px;
     
 
 }
-
-.hours-con:nth-child(3){
-    transform: rotate(90deg) translateY(0.5%);
-    
-    
+.hour:last-child{
+    position:absolute;
+    bottom:0;
 }
 
-.hours-con:nth-child(4){
-    transform: rotate(30deg) translateX(-50%);
-    width:5px;
-    
-    
-}
-
-.hours-con:nth-child(4):before,.hours-con:nth-child(4):after, .hours-con:nth-child(5):before,.hours-con:nth-child(5):after,
-.hours-con:nth-child(6):before,.hours-con:nth-child(6):after, .hours-con:nth-child(7):before,.hours-con:nth-child(7):after{
-    background:#d3d3d3;
-}
-
-.hours-con:nth-child(5):before,.hours-con:nth-child(5):after{
-    background:#d3d3d3;
-}
-
-.hours-con:nth-child(5){
-    transform:rotate(60deg) translate(-25.5%,0.5%);
-    
-    
-}
-
-.hours-con:nth-child(6){
-    transform: rotate(120deg) translate(25%,0.5%);
-    
-    
-}
-
-.hours-con:nth-child(7){
-    transform: rotate(150deg)  translate(50%,2%);
-    
-    
-}
-
+/*
 .arrow{
     position:absolute;
     top:50%;
@@ -141,12 +104,4 @@ main{
     transform:rotate(120deg);
 }
 
-.center{
-    width:25px;
-    height:25px;
-}
-.center-2{
-    width:10px;
-    height:10px;
-    background-color:white;
-}
+*/
