@@ -44,14 +44,30 @@ main{
 
 .hours-con{
     height:100%;
-    width:5px;
+    width:8px;
+    
     position:absolute;
     overflow:hidden;
     left:50%;
-    background:red;
+    
     
 }
 
+.hour{
+    display:inline-block;
+    background-color:mediumSeaGreen;    
+    width:30px;
+    height:35px;  
+}
+.hour:last-child{
+    position:absolute;
+    bottom:0;
+}
+
+.small{
+    height:25px;
+    background:dodgerBlue;
+}
 .deg-90{
     transform:translateX(-50%) rotate(0deg);
 }
@@ -60,19 +76,22 @@ main{
     transform:translateX(-50%) rotate(90deg);
     position:absolute;
 }
-.hour{
-    display:inline-block;
-    background-color:mediumSeaGreen;    
-    width:20px;
-    height:20px;
-    
 
-}
-.hour:last-child{
-    position:absolute;
-    bottom:0;
+.deg-30{
+    transform:translateX(-50%) rotate(30deg);
 }
 
+.deg-60{
+    transform:translateX(-50%) rotate(60deg);
+}
+
+.deg-120{
+    transform:translateX(-50%) rotate(120deg);
+}
+
+.deg-150{
+    transform:translateX(-50%) rotate(150deg);
+}
 /*
 .arrow{
     position:absolute;
