@@ -13,12 +13,12 @@ function setClock(){
 
     //setting minutes
     let m = d.getMinutes();
-    m = ((360/60)*m);
-    console.log(m);
+    m = ((360/60)*m)+180;
+    
 
     minute.style.transform = "rotate("+m+"deg)";
 
-
+    
 
     
 };
