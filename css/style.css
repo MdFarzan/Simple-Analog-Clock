@@ -8,6 +8,7 @@
 body{
     font-family:Helvetica,'opan sans','product sans';
     color:black;
+    background:#d3d3d3;
 }
 
 #wrapper{
@@ -20,8 +21,8 @@ body{
 }
 
 main{
-    width:500px;
-    height:500px;
+    min-width:500px;
+    min-height:500px;
     border-radius:50%;
     background-color:white; 
     position:relative;
@@ -127,3 +128,17 @@ main{
 }
 
 
+@media (max-width:500px){
+    main{
+        display:none;
+    }
+}
+@media (min-width:500px){
+    main{
+        display:block;
+    }
+
+    #not-support{
+        display:none;
+    }
+}
